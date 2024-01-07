@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Tesseract
+/tesseract
+
+# Keys
+*.cer
+
 # Distribution / packaging
 .Python
 build/
