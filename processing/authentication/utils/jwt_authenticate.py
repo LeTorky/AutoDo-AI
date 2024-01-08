@@ -40,7 +40,6 @@ class ExampleAuthentication(BaseAuthentication):
         binary_public_key = public_key.encode('ascii')
         claims = jwt.decode(
             encoded_token, binary_public_key)
-        print(claims)
         try:
             claims.validate()
         except Exception:

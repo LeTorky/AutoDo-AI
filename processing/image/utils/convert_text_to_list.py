@@ -24,12 +24,12 @@ def convert_text_to_list(sentence: str) -> dict:
                         return {
                             "list": [
                                 {
-                                    "id": 1
-                                    "content": "to do 1 summary"
+                                    "TaskId": 1
+                                    "Description": "to do 1 summary"
                                 },
                                 {
-                                    "id": 2
-                                    "content": "to do 2 summary"
+                                    "TaskId": 2
+                                    "Description": "to do 2 summary"
                                 },
                             ]
                         }
