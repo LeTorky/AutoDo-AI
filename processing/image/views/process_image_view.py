@@ -31,6 +31,7 @@ class GetListFromImageView(APIView):
             self._populate_caller_with_list(json_content, domain, request.auth)
             return Response(True)
         except (ValueError, TypeError, KeyError) as e:
+            print(e)
             return Response(f'{e}',
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
