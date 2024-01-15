@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 load_dotenv()
 
 
-class ExampleAuthentication(BaseAuthentication):
+class JWTAuthentication(BaseAuthentication):
     def authenticate(self, request):
         try:
             encoded_token = self._extract_token(request)
